@@ -6,15 +6,16 @@ public class Maxnumber {
         X max = a;
 
         if (b.compareTo(max) > 0)
-            max = b; // y is the largest so far
+            max = b;
 
         if (c.compareTo(max) > 0)
-            max = c; // z is the largest
+            max = c;
 
-        return max; // returns the largest object
-    } // end method maximum
+        return max;
+    }
 
     public static void main(String[] args) {
         System.out.printf("Maximum of %d, %d and %d is %d\n\n", 10, 20, 30, maximum(10, 20, 30));
+        System.out.printf("Maximum of %.1f, %.1f and %.1f is %.1f\n\n", 11.11, 21.21, 31.31, maximum(11.11, 12.12, 13.13));
     }
 }
